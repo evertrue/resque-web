@@ -8,6 +8,7 @@ gem 'sqlite3', :platforms => :ruby
 gem 'activerecord-jdbcsqlite3-adapter', :platforms => :jruby
 
 group :development, :test do
+  gem 'pry'
   gem "dotenv-rails"
   gem "rdoc"
 end
@@ -18,7 +19,6 @@ group :test do
   gem 'redcard'
   gem "mocha", :require => false
 end
-
 
 group :assets do
   gem 'uglifier', '>= 1.0.3'
